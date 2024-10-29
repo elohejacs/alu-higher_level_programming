@@ -1,4 +1,4 @@
-#!/usr/bin/python3
-str1 = "Welcome to "
-str2 = "Holberton School!"
-print(str1 + str2)
+#!/usr/bin/pytho3
+aa = "Welcome to "
+bb = "Holberton School!"
+print(aa + bb)
