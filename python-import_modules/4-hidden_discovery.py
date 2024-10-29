@@ -10,6 +10,6 @@ if __name__ == "__main__":
     filtered_names = [name for name in names if not name.startswith("__")]
     filtered_names.sort()
 
-    # Print each name on a new line
+    # Print each nme on a new line
     for name in filtered_names:
         print(name)
