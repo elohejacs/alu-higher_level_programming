@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""a class Square with size and position validation"""
+"""This module defines a class Square with size and position validation"""
 
 
 class Square:
@@ -40,21 +40,30 @@ class Square:
 
     @position.setter
     def position(self, value):
+        """Sets the position of the square with validation."""
         if not (isinstance(value, tuple) and len(value) == 2 and
                 all(isinstance(num, int) and num >= 0 for num in value)):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
 
     def area(self):
+        """Returns the current square area."""
         return self.__size ** 2
 
     def my_print(self):
-            if self.__size == 0:
+        """
+        Prints the square with the character '#'.
+        If size is 0, prints an empty line.
+        The position is used to adjust the printing by adding spaces and newlines.
+        """
+        if self.__size == 0:
             print()
             return
         
+        # Print the newlines according to position[1]
         for _ in range(self.__position[1]):
             print()
         
+        # Print the square with spaces according to position[0]
         for _ in range(self.__size):
             print(" " * self.__position[0] + "#" * self.__size)
