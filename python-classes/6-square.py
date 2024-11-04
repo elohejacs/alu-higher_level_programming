@@ -17,7 +17,7 @@ class Square:
             ValueError: If size is less than 0.
         """
         self.size = size  # This calls the size setter for validation
-        self.position = position  # This calls the position setter for validation
+        self.position = position  # This calls the position setter
 
     @property
     def size(self):
@@ -53,8 +53,7 @@ class Square:
     def my_print(self):
         """
         Prints the square with the character '#'.
-        If size is 0, prints an empty line.
-        The position is used to adjust the printing by adding spaces and newlines.
+        If used to adjust the printing by adding spaces and newlines.
         """
         if self.__size == 0:
             print()
