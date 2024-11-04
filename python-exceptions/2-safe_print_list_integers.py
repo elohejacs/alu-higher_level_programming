@@ -1,13 +1,12 @@
 #!/usr/bin/python3
-def list_division(my_list_1, my_list_2, list_length) n_list = []
+def safe_print_list_integers (my_list=[], x=0): num = 0
 
-for i in range(list_length).
- try:
+for items in range(x):
 
-div = my_list_1[i]/my_list_2[1] except TypeError: print("wrong type")
+try:
 
-div = 0 except ZeroDivisionError: except IndexError: print("out of range") div = 0 finally n_list.append(div)
+print("{:d}".format(my_list(items)), end='') num += 1
 
-print("division by 0") div = 0
+except (ValueError, TypeError): pass
 
-return n_list
+print() return num
