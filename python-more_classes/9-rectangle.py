@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+"""ule defines a rectangle with width and height attributes,"""
+
+
 class Rectangle:
     """
     Represents a rectangle.
@@ -5,8 +9,6 @@ class Rectangle:
         number_of_instances (int):r of Rectangle instances.
         print_symbol (any): Thetring representation.
     """
-
-
     number_of_instances = 0
     print_symbol = "#"
 
