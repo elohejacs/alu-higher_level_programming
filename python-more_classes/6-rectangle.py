@@ -3,7 +3,8 @@
 
 
 class Rectangle:
-    """Represents a rectangle and""" 
+    """Represents a rectangle and"""
+
     # Public class attribute
     number_of_instances = 0
 
