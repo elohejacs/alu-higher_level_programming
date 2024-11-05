@@ -3,7 +3,7 @@
 
 
 class Rectangle:
-    """Represents a rectangle."""    
+    """Represents a rectangle and""" 
     # Public class attribute
     number_of_instances = 0
 
@@ -62,6 +62,6 @@ class Rectangle:
         return "Rectangle({}, {})".format(self.width, self.height)
 
     def __del__(self):
-        """Prints message when Rectangle is deleted and updates instance count."""
+        """Prints message when Rectangand updates instance count."""
         Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
