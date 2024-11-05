@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""module defines a rectangle with width and height attributes"""
+
 
 class Rectangle:
     """
