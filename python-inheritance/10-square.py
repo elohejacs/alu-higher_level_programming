@@ -23,7 +23,8 @@ class Rectangle(BaseGeometry):
     def __init__(self, width, height):
         """Initialize the Rectangle with validated width and height."""
         self.integer_validator("width", width)
-        self.integer_validator("height", height)        
+        self.integer_validator("height", height)
+
         self.__width = width
         self.__height = height
 
@@ -38,7 +39,7 @@ class Rectangle(BaseGeometry):
 
 class Square(Rectangle):
 
-    """Square class that inherits from Rectangle."""    
+    """Square class that inherits from Rectangle."""
     def __init__(self, size):
         """Initialize the Square with validated size."""
         self.integer_validator("size", size)
