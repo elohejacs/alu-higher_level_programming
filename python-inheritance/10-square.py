@@ -40,7 +40,6 @@ class Square(Rectangle):
     def __init__(self, size):
         """Initialize the Square with validated size."""
         self.integer_validator("size", size)
-        
         # Call the parent class constructor with size as both width and height
         super().__init__(size, size)
 
@@ -50,4 +49,4 @@ class Square(Rectangle):
 
     def __str__(self):
         """Return a string representation of the Square."""
-        return "Rectangle".format(self._Rectangle__width, self._Rectangle__height)
+        return "angle".format(self._Rectangle__width, self._Rectangle__height)
