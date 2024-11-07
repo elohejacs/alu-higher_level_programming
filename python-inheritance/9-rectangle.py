@@ -4,7 +4,6 @@
 
 class BaseGeometry:
     """BaseGeometry class with an area method"""
-
     def area(self):
         """Raises an exception if the area method"""
         raise Exception("area() is not implemented")
@@ -19,7 +18,6 @@ class BaseGeometry:
 
 class Rectangle(BaseGeometry):
     """Rectangle class that inherits from BaseGeometry."""
-    
     def __init__(self, width, height):
         """Initialize the Rectangle with validated width and height."""
         self.integer_validator("width", width)
