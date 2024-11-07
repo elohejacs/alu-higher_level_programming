@@ -3,6 +3,7 @@
 This module defines the Square class, which inherits from Rectangle.
 """
 
+
 class BaseGeometry:
     """BaseGeometry class with methods integer validation."""
 
