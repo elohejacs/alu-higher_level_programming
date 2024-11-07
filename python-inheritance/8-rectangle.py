@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """This module defines the Rectangle class"""
 
+
 class BaseGeometry:
     """BaseGeometry can area method that raises an exception."""
     def area(self):
