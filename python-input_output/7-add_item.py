@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Task 7"""
+"""Task 7 import sys and other files"""
 
 
 import sys
