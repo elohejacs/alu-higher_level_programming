@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Function that open files"""
+
+
 def read_file(filename=""):
     """
     Reads a text file (UTF8) and rints it to stdout.
