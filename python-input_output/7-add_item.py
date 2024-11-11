@@ -10,9 +10,13 @@ filename = "add_item.json"
 
 def main():
     """
-    Adds all command-line arguments to a Python list.
-    The list is loaded from 'add_item.json' if it exists 
-    The updated list is saved back to the file.
+    Adds all command-line arguments to a Python list and saves them
+    The list is loaded from 'add_item.json' if it existsts are 
+    appended. The updated list is saved back to the file.
+    This script will:
+    - Load the current list from 'add_item.json'.
+    - Append command-line arguments (if any) to the list.
+    - Save the updated list back to 'add_item.json'.
     """
     try:
         items = load_from_json_file(filename)
