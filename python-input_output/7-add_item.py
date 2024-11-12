@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """Task 7 import sys and other files"""
 
-
 import sys
 from 5_save_to_json_file import save_to_json_file
 from 6_load_from_json_file import load_from_json_file
