@@ -8,7 +8,7 @@ from 6_load_from_json_file import load_from_json_file
 """TAsk 7 import sy and other files"""
 
 filename = "add_item.json"
-
+"""Task 7 import sys and other files"""
 def main():
     """
     Adds all command-line arguments to a Python list and saves them
