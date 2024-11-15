@@ -1,31 +1,20 @@
 #!/usr/bin/python3
-"""Task 7 import sys and other files"""
+"""Are you docuemnted ?"""
+
 
 import sys
-from 5_save_to_json_file import save_to_json_file
-from 6_load_from_json_file import load_from_json_file
-
-"""TAsk 7 import sy and other files"""
-
-filename = "add_item.json"
-"""Task 7 import sys and other files"""
-def main():
-    """
-    Adds all command-line arguments to a Python list and saves them
-    The list is loaded from 'add_item.json' if it existsts are 
-    appended. The updated list is saved back to the file.
-    This script will:
-    - Load the current list from 'add_item.json'.
-    - Append command-line arguments (if any) to the list.
-    - Save the updated list back to 'add_item.json'.
-    """
-    try:
-        items = load_from_json_file(filename)
-    except FileNotFoundError:
-        items = []
-
-    items.extend(sys.argv[1:])
-    save_to_json_file(items, filename)
 
 if __name__ == "__main__":
-    main()
+    save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
+    load_from_json_file = __import__('6-load_from_json_file') \
+        .load_from_json_file
+
+    try:
+        loadFile = load_from_json_file("add_item.json")
+    except FileNotFoundError:
+        loadFile = []
+
+    argc = len(sys.argv)
+    for idx in range(1, argc):
+        loadFile.append(sys.argv[idx])
+    save_to_json_file(loadFile, "add_item.json")
