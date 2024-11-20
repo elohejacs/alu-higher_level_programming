@@ -1,3 +1,3 @@
 #!/bin/bash
-# Sends a GET request to the URL and displays the response body if status is 200
-curl -s "$1" | wc -c
+# This script sends a GET request to a URL and displays the body of the response (if status code is 200)
+curl -sL "$1"
