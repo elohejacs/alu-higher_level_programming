@@ -6,15 +6,15 @@ The script prints the following details about the response:
     - content: The raw content of the response
     - utf8 content: The decoded content as a UTF-8 string
 """
-
+"""document"""
 import urllib.request
 """using another  fnct"""
 
-# Fetching the URL content using urllib
+"""Fetching the URL content using urllib"""
 with urllib.request.urlopen('https://alu-intranet.hbtn.io/status') as response:
     body = response.read()
 
-# Printing the response details
+"""Printing the response details"""
 print("Body response:")
 print(f"    - type: {type(body)}")
 print(f"    - content: {body}")
