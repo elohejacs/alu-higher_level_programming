@@ -1,12 +1,6 @@
 #!/usr/bin/python3
-"""
-Fetches the status from https://alu-intranet.hbtn.io/status.
-The script prints the following details about the response:
-    - type: The type of the response content
-    - content: The raw content of the response
-    - utf8 content: The decoded content as a UTF-8 string
-"""
-"""document"""
+"""Task 0"""
+
 import urllib.request
 """using another  fnct"""
 
