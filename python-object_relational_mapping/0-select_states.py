@@ -20,7 +20,11 @@ if __name__ == "__main__":
     )
     cur = db.cursor()
     cur.execute("SELECT * FROM states ORDER BY id ASC")
-    for row in cur.fetchall():
-        print(row)
+    while True:
+        rows = cur.fetchmany(1000)  # Fetch 1000 rows at a time
+        if not rows:
+            break
+        for row in rows:
+            print(row)
     cur.close()
     db.close()
