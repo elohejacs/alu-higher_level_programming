@@ -13,7 +13,7 @@ if __name__ == "__main__":
        password=sys.argv[2],
        db=sys.argv[3],
        host="localhost",
-       port=5000
+       port=3306
     )
 
     cur = conn.cursor()
